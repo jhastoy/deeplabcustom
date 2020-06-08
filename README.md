@@ -17,7 +17,7 @@ This implementation currently works only for the detection of 2 classes (for exa
 1- Clone the [official DeepLab repo](https://github.com/tensorflow/models/tree/master/research/deeplab) and copy all files of this repo in models/research with replacing (you can delete all the folders except "slim" and "deeplab"). 
 
 2- Edit model_training.sh :
-- TRAIN_BATCH_SIZE : number of images per batch. An hugh value can take a lot of memory during training, depending of the TRAIN_CROP_SIZE. Ajust this value compared to your GPU memory.
+- TRAIN_BATCH_SIZE : number of images per batch. An high value can take a lot of memory during training, depending of the TRAIN_CROP_SIZE. Ajust this value compared to your GPU memory.
 - TRAIN_CROP_SIZE : preprocessing image size for training. The larger the size, the more precise the segmentation.
 - TRAIN_VAL_RATIO : percentage of the number of training images compared to the number of evaluation images.
 - NUM_OF_CLASSES : number of segmentation classes.
