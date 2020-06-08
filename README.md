@@ -10,7 +10,7 @@ This implementation currently works only for the detection of 2 classes (for exa
 
 2- Cut out the objects with the tool you want (photoshop, ...) and save it in png format. Please note: __the png cutout must have the same name and size as the original jpg image__.
 
-3- Place the original images (jpg) in DATA/MyModel/Raw/JPEGImages and the cropped images (png) in DATA/MyModel/Raw/Segmentation.
+3- Place the original images (jpg) in _DATA/MyModel/Raw/JPEGImages_ and the cropped images (png) in _DATA/MyModel/Raw/Segmentation_.
 
 ## Train your dataset
 
@@ -26,13 +26,13 @@ This implementation currently works only for the detection of 2 classes (for exa
 
 For the other training parameters, look into deeplab/train.py file or the [official DeepLab repo](https://github.com/tensorflow/models/tree/master/research/deeplab). 
 
-3- Download a pretrained model from [DeepLab model zoo](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md) and place all the .ckpt file into DATA/MyModel/Model/init_model
+3- Download a pretrained model from [DeepLab model zoo](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md) and place all the .ckpt file into _DATA/MyModel/Model/init_model_.
 
 If you don't want to keep pretrained weights, set --last_layers_contain_logits_only=false.
 
 4- Run model_training.sh. 
 
-5- At the end, model checkpoint will be stored in DATA/MyModel/Model/train_log and the frozen inference graph (for production use) in DATA/MyModel/Model/frozen_graph. 
+5- At the end, model checkpoint will be stored in _DATA/MyModel/Model/train_log_ and the frozen inference graph (for production use) in _DATA/MyModel/Model/frozen_graph_. 
 
 ## Background removal
 
